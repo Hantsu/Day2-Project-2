@@ -1,0 +1,42 @@
+/* Filename:        ip2_variables2.cpp
+    Driver:         Max
+    Navigator:      Alexis
+    Description:    Program to output some values of different data types.
+    Objective:      Demonstrate use of int, char, string, and bool data types.
+    
+    Author:         Max Taylor
+    Date:           1/10/19
+    
+    Specifications: Write a program that declares, initializes, and outputs 
+                    the values held in the variables listed below. 
+                    Use setw( ) to set up columns in the output.
+*/
+
+#include <iostream> // cout
+#include <iomanip> // fixed, showpoint, setw, setprecision
+#include <string>  //string data type
+using namespace std;
+
+int main(){
+    
+    //Declaring the Variables
+    string myName;
+    char lastInitial;
+    int studentIDNo;
+    bool isFreshman;
+    
+    //Initialize Variables
+    myName="Max";
+    lastInitial='T';
+    studentIDNo=725370;
+    isFreshman=1;
+    
+    //Output Variables
+    cout << "My name: " << setw(10) << myName << endl;
+    cout << "lastInitial: " << setw(4) << lastInitial << endl;
+    cout << "StudentIDNo: " << setw(9) << studentIDNo << endl;
+    cout << "isFreshman: " << setw(5) << isFreshman << endl;
+    
+    return 0;
+    
+}
